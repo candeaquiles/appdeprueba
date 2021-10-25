@@ -1,0 +1,45 @@
+DESTRUCTURING:
+
+*const arr = [1,2,3]:
+Guardo cada valor dentro de una variable,entonces cada vez que el valor deba a ser llamado, solo inicializo la misma
+ejemplo:
+const [uno, dos, tres] = arr 
+const uno = arr[0]
+const dos = arr[1]
+
+////
+const obj = {a:1, b:2, c:3}
+
+const {a:a, b:b, c:c} = obj
+
+//la x es inventada
+
+OBJECT PROPERTY SHORTHAND:
+Si tengo qwue escribir una propiedad, y esa propiedad vale una variable que se llama igual, no hace falta que la vuelva escribir. Se sobre entiende
+{props:props} === {props}
+
+
+ejemplo con funcion:
+
+const {nombre:nombre, apellido:apellido} = props
+
+//
+
+Otra forma de pasar props, es cuando dentro de la funcion principal (App), mantenes la etiqueta generadora abierta (<main></main>) y dentro de la apertura, y cierre, poner el contenido. Al principio no se va a leer, porque no tiene instrucciones, solo estamos dandole como paramentro de la funcion.
+Sera un children. Si tiene mas de un prop, se convierte en array de children.
+
+
+
+
+///STATE: Son variables internas de un componente que se mantienen a traves de ejecucion y nos dan reactividad
+
+//HOOKS : Funciones. Son funciones que se ejecutan en una etapa especifica de la ejecucion de un componente. 
+  Hook de estado:
+  -useState
+  -useReducer
+  -useRef
+Son funciones, por ende, despues debe ponerse ()
+No pueden estar dentro de condicionales, porque no se ejecutan. Tampoco bucles
+Deben estar fuera del return de un componente.
+
+Cuando se usa un hook, si lo consologueo, lo devuelve como un array. Dentro de ese array, el primer valor es lo que esta dentro del hook, y lo segundo es la funcion
