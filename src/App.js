@@ -42,7 +42,7 @@ function App() {
  //console.log(resultado);
 
  /*const [saludo, setSaludo] = useState("Hola")*/
- const [contador, setContador] = useState(0)
+ /*const [contador, setContador] = useState(0)*/
  
   
  
@@ -59,11 +59,11 @@ function App() {
 
   /*const sumarContador = () =>{
     /*console.log("Sumar");*/
-    setContador(contador + 1)
+    /*setContador(contador + 1)*/
 
   return (
     <div className="App">
-      <Item />
+    {/*<Item />*/}
 
 
      <ListContainer/>
@@ -74,14 +74,14 @@ function App() {
       
       <Header nombre="Candelaria" apellido="Aquiles" />
 
-      <Count/>
+        {/*<Count/>*}
 
-      <Scripti/>
+      {/*<Scripti/>*/}
 
 
 
-    </div>
-  );
+    <div/>
+  )
 }
 
 export default App;
