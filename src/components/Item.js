@@ -3,10 +3,12 @@
 const Item = ({id, name, imgUrl, stock}) => {
     
     return (
-        <div>
-            <img key={id} alt="fotito" src={imgUrl}/>
-            <h1 key={id}>nombre: {name}</h1>
-            <p key={stock}></p>
+        <div key={id}>
+        
+        <img alt={name} src={imgUrl}/>
+            <h1> nombre: {name} <h1/>
+                <p>{stock}<p/>
+            
             
         </div>
     )
