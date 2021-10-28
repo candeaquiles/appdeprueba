@@ -8,7 +8,7 @@ const ItemList = (props) => {
                 {
                     props.productos.map((producto) =>{
                     return( 
-                        <Item key={producto.id} nombre={producto.name} img={producto.imgUrl} stock={producto.stock}/>
+                        <Item key={producto.id} name={producto.name} imgUrl={producto.imgUrl} stock={producto.stock}/>
                     )
                 })
             }
