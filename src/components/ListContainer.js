@@ -27,7 +27,7 @@ const ListContainer = ({id, name, imgUrl, stock}) => {
         
         <div>
         <ItemList productos={producto}/>    
-        </div>
+        <div/>
     )
 }
 
